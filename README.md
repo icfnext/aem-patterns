@@ -21,7 +21,7 @@ AEM Patterns seeks to greatly reduce this coupling by allowing pattern templates
 
 ## Usage
 
-A typical HTL-based AEM component generates markup via an HTL template. This template will generally start by initializing a corresponding Sling Model with a `data-sly-use` attribute. The component markup is then rendered, calling properties on the model as necessary.
+A typical HTL-based AEM component generates markup via an HTL template. This template will generally start by initializing a corresponding [Sling Model](https://sling.apache.org/documentation/bundles/models.html#) with a `data-sly-use` attribute. The component markup is then rendered, calling properties on the model as necessary.
 
 HTL:
 ```html
@@ -41,7 +41,11 @@ public class Model {
 }
 ```
 
-AEM Patterns inverts this relationship. Developers will still create a Sling Model exposing all properties required by the template. However, the model now additionally specifies the template it should be called with, using a Sling Model Exporter annotation:
+AEM Patterns inverts this relationship. Developers still create a Sling Model exposing all properties required by the template. However, the model now additionally specifies the template it should be called with, using a [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130). Adding an `@Exporter` annotation to a Sling Model automatically registers a servlet for the models resource type. This servlet responds to incoming requests by instantiating a model instance and converting that model into an output string via some custom logic.
+
+The AEM Patterns exporter looks up the pattern template for a given model (specified via an option on the `@Exporter` annotation), executes the template against the model, and returns the output. Language support is provided via plugin, using the [PatternProvider](core/src/main/java/com/icfnext/aem/patterns/core/pattern/PatternProvider.java) service interface.
+
+Below is the updated model class, now annotated as an `@Exporter`. This exporter annotation registers a servlet serving html requests for the component (`extensions = "html"`). This servlet calls the custom Exporter provided by AEM Patterns (`name = ExporterTypes.PATTERN`) which looks up the desired template (`@ExporterOption(name = ExporterOptions.TEMPLATE_PATH, value = "/apps/example/frontend/patterns/model.hbs")`) and calls it, supplying the model as context. The exporter delegates to the [HandlebarsPatternProvider](handlebars/src/main/java/com/icfnext/aem/patterns/handlebars/pattern/HandebarsPatternProvider.java) (since this plugin is registered to serve templates with an `hbs` extension), which itself uses a [Java Handlebars engine](https://github.com/jknack/handlebars.java) to render the component's output.
 
 Model class:
 ```java
@@ -62,8 +66,6 @@ Handlebars:
 ```handlebars
 <h1>{{heading}}</h1>
 ```
-
-This exporter annotation registers a servlet serving html requests for the component (`extensions = "html"`). This servlet calls a custom Exporter provided by AEM Patterns (`name = ExporterTypes.PATTERN`) which looks up the desired template (`@ExporterOption(name = ExporterOptions.TEMPLATE_PATH, value = "/apps/example/frontend/patterns/model.hbs")`) and calls the it, supplying the model as context.
 
 The result is a an AEM component that doesn't require any HTL, and which instead uses frontend patterns directly from the pattern library. AEM developers can then create dialogs to expose the properties of a model to authors, or pull property values from a service, or generate them using custom logic, etc.
 
