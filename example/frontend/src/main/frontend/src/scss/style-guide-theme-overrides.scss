@@ -1,0 +1,84 @@
+// ****
+// ** Overrides to the Fractal Application Styling **
+// ****
+
+// Fractal Frame Navigation Header
+.Frame-header {
+    .Header {
+        background-color: #0d4d96;
+
+        .Header-button:hover {
+            background-color: #00a7e0;
+        }
+
+        &-version{
+            position: absolute;
+            right: 15px;
+        }
+    }
+}
+
+.Status-dot{
+    border-width: 4px;
+}
+
+// One line code highlights in docs
+.docs__code-highlight {
+    padding: 4px;
+    color: hotpink;
+}
+
+// Square color boxes in docs
+.docs__color-box {
+    width: 20px;
+    height: 20px;
+}
+// Rectangle color swatches in docs
+.docs__color-swatch {
+    width: 100px;
+    height: 20px;
+    float: right;
+}
+
+// Side navigation links
+a.Tree-entityLink {
+    color: #00a7e0;
+}
+a.Tree-entityLink:hover {
+    color: #0d4d96;
+}
+
+.Pen-previewLink svg {
+    fill: #e45438;
+}
+
+.Document-header {
+    position: relative;
+    padding-top: 150px;
+}
+.Document-header:before {
+    content: '';
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    width: 330px;
+    height: 140px;
+    position: absolute;
+    top: 0;
+}
+
+.Header-title {
+    margin-left: 10px;
+    height: 30px;
+    width: 78px;
+    background-image: url(../images/logo-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent !important;
+}
+
+.Browser-tab.is-active a {
+    border-bottom-color: #00a7e0;
+}
+.Meta-value a {
+    color: #00a7e0;
+}

@@ -1,0 +1,5 @@
+<sly data-sly-use.placeholder="com.icfnext.aem.patterns.core.components.PlaceholderComponent" data-sly-test="${!placeholder.skipPlaceholder}">
+    <sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+         data-sly-call="${template.placeholder @ isEmpty=true}"></sly>
+</sly>
+<div data-sly-resource="${resource.path @ selectors='model'}"></div>

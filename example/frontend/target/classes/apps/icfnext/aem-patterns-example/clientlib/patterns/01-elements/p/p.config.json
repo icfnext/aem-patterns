@@ -1,0 +1,13 @@
+{
+    "title" : "Paragraph",
+    "handle" : "p",
+    "default": "primary",
+    "variants": [
+      {
+        "name":"primary",
+        "context":{
+          "text":"Lorem ipsum dolor sit amet consectetur adipiscing elit, ultricies duis proin vestibulum tellus volutpat, sodales porttitor ut hendrerit litora montes. Dui morbi dapibus sapien litora magna habitasse integer sodales sociosqu at, himenaeos ultrices neque ullamcorper nisl quis blandit sagittis ac. Tincidunt risus nisi feugiat nostra phasellus donec ultricies lectus, sodales imperdiet interdum lacinia volutpat facilisi parturient, tristique libero congue sollicitudin sapien in aptent.\n\nFames rutrum odio ligula pretium tortor tincidunt sed magnis congue commodo, phasellus viverra proin orci condimentum sollicitudin platea purus vestibulum dui accumsan, tempus cursus vel himenaeos pellentesque posuere sapien senectus tellus. Pretium molestie blandit lectus non viverra eros aptent etiam quam imperdiet augue, libero tellus hac convallis egestas fames mus justo montes. Sollicitudin facilisi fames tortor urna taciti quis vulputate, vel elementum hac laoreet donec iaculis."
+        }
+      }
+    ]
+}

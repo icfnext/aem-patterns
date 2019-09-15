@@ -1,0 +1,44 @@
+{
+    "title" : "Carousel",
+    "handle" : "carousel",
+    "default": "primary",
+    "variants": [
+      {
+        "name":"primary",
+        "context":{
+          "id":"sample-carousel",
+          "controls":true,
+          "indicators":true,
+          "slides": [
+            {
+              "imgSrc":"https://dummyimage.com/1200x400/000/fff&text=+",
+              "imgAlt":"ALT 0",
+              "headingText":"Heading 0",
+              "descriptionText": "Lorem ipsum dolor sit amet consectetur adipiscing elit ligula enim penatibus egestas arcu, ut varius bibendum rhoncus urna nulla tristique morbi quisque laoreet. Urna mauris dui litora ac bibendum risus augue interdum volutpat conubia, eleifend ridiculus et vulputate nascetur cras dis hac porttitor, montes metus vitae suspendisse per nostra tincidunt diam donec. Aliquet habitasse pellentesque sem montes habitant consequat nascetur, aptent turpis velit eleifend porta odio vel blandit, class neque volutpat eu ridiculus natoque.\n\nFames velit pulvinar commodo dignissim himenaeos dictum class, lectus molestie natoque mollis ullamcorper aliquam euismod, ligula nulla lacus dui ut turpis. Maecenas rhoncus condimentum volutpat torquent mi habitant tellus turpis posuere eros, curae imperdiet vehicula vestibulum nascetur sodales cubilia aptent laoreet. Est elementum torquent quisque libero justo cras primis venenatis cum sodales, accumsan metus euismod commodo aliquam convallis vel mauris arcu, sagittis felis sapien leo pharetra vitae tempor sociis rhoncus. Bibendum ut tellus luctus sagittis rutrum sociis diam, at commodo interdum pellentesque maecenas cubilia, aenean nostra aptent laoreet venenatis leo dictumst, a vel ad conubia lobortis.",
+              "ctaHref": "https://www.google.com",
+              "ctaText": "CTA 0",
+              "ctaStyle": "primary"
+            },
+            {
+              "imgSrc":"https://dummyimage.com/1200x400/900/fff&text=+",
+              "imgAlt":"ALT 1",
+              "headingText":"Heading 1",
+              "descriptionText": "Lorem ipsum dolor sit amet consectetur adipiscing elit ligula enim penatibus egestas arcu, ut varius bibendum rhoncus urna nulla tristique morbi quisque laoreet. Urna mauris dui litora ac bibendum risus augue interdum volutpat conubia, eleifend ridiculus et vulputate nascetur cras dis hac porttitor, montes metus vitae suspendisse per nostra tincidunt diam donec. Aliquet habitasse pellentesque sem montes habitant consequat nascetur, aptent turpis velit eleifend porta odio vel blandit, class neque volutpat eu ridiculus natoque.\n\nFames velit pulvinar commodo dignissim himenaeos dictum class, lectus molestie natoque mollis ullamcorper aliquam euismod, ligula nulla lacus dui ut turpis. Maecenas rhoncus condimentum volutpat torquent mi habitant tellus turpis posuere eros, curae imperdiet vehicula vestibulum nascetur sodales cubilia aptent laoreet. Est elementum torquent quisque libero justo cras primis venenatis cum sodales, accumsan metus euismod commodo aliquam convallis vel mauris arcu, sagittis felis sapien leo pharetra vitae tempor sociis rhoncus. Bibendum ut tellus luctus sagittis rutrum sociis diam, at commodo interdum pellentesque maecenas cubilia, aenean nostra aptent laoreet venenatis leo dictumst, a vel ad conubia lobortis.",
+              "ctaHref": "https://www.google.com",
+              "ctaText": "CTA 1",
+              "ctaStyle": "secondary"
+            },
+            {
+              "imgSrc":"https://dummyimage.com/1200x400/009/fff&text=+",
+              "imgAlt":"ALT 2",
+              "headingText":"Heading 2",
+              "descriptionText": "Lorem ipsum dolor sit amet consectetur adipiscing elit ligula enim penatibus egestas arcu, ut varius bibendum rhoncus urna nulla tristique morbi quisque laoreet. Urna mauris dui litora ac bibendum risus augue interdum volutpat conubia, eleifend ridiculus et vulputate nascetur cras dis hac porttitor, montes metus vitae suspendisse per nostra tincidunt diam donec. Aliquet habitasse pellentesque sem montes habitant consequat nascetur, aptent turpis velit eleifend porta odio vel blandit, class neque volutpat eu ridiculus natoque.\n\nFames velit pulvinar commodo dignissim himenaeos dictum class, lectus molestie natoque mollis ullamcorper aliquam euismod, ligula nulla lacus dui ut turpis. Maecenas rhoncus condimentum volutpat torquent mi habitant tellus turpis posuere eros, curae imperdiet vehicula vestibulum nascetur sodales cubilia aptent laoreet. Est elementum torquent quisque libero justo cras primis venenatis cum sodales, accumsan metus euismod commodo aliquam convallis vel mauris arcu, sagittis felis sapien leo pharetra vitae tempor sociis rhoncus. Bibendum ut tellus luctus sagittis rutrum sociis diam, at commodo interdum pellentesque maecenas cubilia, aenean nostra aptent laoreet venenatis leo dictumst, a vel ad conubia lobortis.",
+              "ctaHref": "https://www.google.com",
+              "ctaText": "CTA 2",
+              "ctaStyle": "warning"
+            }
+          ]
+        }
+      }
+    ]
+}

@@ -1,0 +1,30 @@
+@import "font-definitions";
+@import "font-sizes";
+
+$lato-light: 'Lato-Light', sans-serif;
+$lato-lightitalic: 'Lato-LightItalic', sans-serif;
+$lato: 'Lato', sans-serif;
+$lato-italic: 'Lato-Italic', sans-serif;
+$lato-bold: 'Lato-Bold', sans-serif;
+$lato-bolditalic: 'Lato-BoldItalic', sans-serif;
+$lato-black: 'Lato-Black', sans-serif;
+$lato-blackitalic: 'Lato-BlackItalic', sans-serif;
+
+$font-family : (
+	'light' : ( 'family': $lato-light, 'weight' : map_get($fontWeights, light) ),
+	'light-italic' : ( 'family': $lato-lightitalic, 'weight' : map_get($fontWeights, light) ),
+	'regular' : ( 'family': $lato, 'weight': map_get($fontWeights, regular) ),
+	'italic' : ( 'family': $lato-italic, 'weight': map_get($fontWeights, regular) ),
+	'bold' : ( 'family' : $lato-bold, 'weight': map_get($fontWeights, bold) ),
+	'bold-italic' : ( 'family' : $lato-bolditalic, 'weight': map_get($fontWeights, bold) ),
+	'black' : ( 'family' : $lato-black, 'weight': map_get($fontWeights, black) ),
+	'black-italic' : ( 'family' : $lato-blackitalic, 'weight': map_get($fontWeights, black) )
+);
+
+@mixin font-family( $family ){
+	$font : map-get($font-family, $family);
+
+	font-family: map-get( $font, 'family' );
+	// Forgo using font weight variables, and rely on the font-families themselves to regulate
+	font-weight: normal;
+}

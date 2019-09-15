@@ -1,0 +1,1 @@
+Static headings, paragraphs, and other text examples to demonstrate the different typography options in the pattern library.

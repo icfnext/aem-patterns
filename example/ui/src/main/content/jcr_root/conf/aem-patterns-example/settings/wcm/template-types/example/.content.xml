@@ -1,0 +1,22 @@
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="cq:Template">
+    <initial jcr:primaryType="cq:Page">
+        <jcr:content jcr:primaryType="cq:PageContent" sling:resourceType="icfnext/aem-patterns-example/components/page/example-page">
+            <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid">
+            </root>
+        </jcr:content>
+    </initial>
+    <jcr:content jcr:primaryType="cq:PageContent" jcr:description="Template for AEM-patterns Example Page" jcr:title="AEM Patterns Example Page"/>
+    <structure jcr:primaryType="cq:Page">
+        <jcr:content jcr:primaryType="cq:PageContent" sling:resourceType="icfnext/aem-patterns-example/components/page/example-page">
+            <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid">
+            </root>
+        </jcr:content>
+    </structure>
+    <policies jcr:primaryType="cq:Page">
+        <jcr:content jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mappings">
+            <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mappings"/>
+        </jcr:content>
+    </policies>
+</jcr:root>

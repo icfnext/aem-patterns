@@ -1,0 +1,71 @@
+{
+    "title" : "Button",
+    "handle" : "button",
+    "default": "primary",
+    "collated": true,
+    "variants": [
+      {
+        "name":"primary",
+        "context":{
+          "style":"primary",
+          "text":"primary"
+        }
+      },
+      {
+        "name":"secondary",
+        "context":{
+          "style":"secondary",
+          "text":"secondary"
+        }
+      },
+      {
+        "name":"success",
+        "context":{
+          "style":"success",
+          "text":"success"
+        }
+      },
+      {
+        "name":"danger",
+        "context":{
+          "style":"danger",
+          "text":"danger"
+        }
+      },
+      {
+        "name":"warning",
+        "context":{
+          "style":"warning",
+          "text":"warning"
+        }
+      },
+      {
+        "name":"info",
+        "context":{
+          "style":"info",
+          "text":"info"
+        }
+      },
+      {
+        "name":"light",
+        "context":{
+          "style":"light",
+          "text":"light"
+        }
+      },
+      {
+        "name":"dark",
+        "context":{
+          "style":"dark",
+          "text":"dark"
+        }
+      },
+      {
+        "name":"link",
+        "context":{
+          "style":"link",
+          "text":"link"
+        }
+      }
+    ]
+}

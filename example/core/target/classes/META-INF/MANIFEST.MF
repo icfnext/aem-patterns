@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1568574162112
+Build-Jdk: 1.8.0_211
+Built-By: gsnyder
+Bundle-Category: AEM Patterns
+Bundle-Description: AEM FE Example core bundle
+Bundle-ManifestVersion: 2
+Bundle-Name: aem-patterns-example-core
+Bundle-SymbolicName: aem-patterns-example-core
+Bundle-Vendor: ICF Next
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Import-Package: com.google.common.base;version="[15.0,16)",com.icfnext.a
+ em.patterns.core.components;version="[1.0,2)",javax.annotation,javax.in
+ ject,org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.resour
+ ce;version="[2.10,3)",org.apache.sling.models.annotations;version="[1.5
+ ,2)",org.apache.sling.models.annotations.injectorspecific;version="[1.1
+ ,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Sling-Model-Classes: com.icfnext.aem.patterns.example.components.content
+ .Carousel,com.icfnext.aem.patterns.example.components.page.ExamplePage
+Tool: Bnd-3.2.0.201605172007

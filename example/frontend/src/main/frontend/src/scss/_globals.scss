@@ -1,0 +1,117 @@
+@import "vars";
+@import "responsive";
+@import "vendor";
+@import "fonts/fonts";
+@import "spacing";
+@import "transitions";
+@import "line-heights";
+@import "z-indexes";
+@import "is-active";
+
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+    // Root font-size
+    font-size: #{map_get($fontSizes, base-font-size)}px;
+}
+
+body {
+    overflow-x: hidden; 
+    @include font-family('regular');
+    width: 100vw;
+    color: $black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Fix for the AEM Container component, which shouldn't be adding ".container" esque left-right padding
+.container.parsys:not([class*=col]) {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: inherit;
+}
+
+// Extra breakpoint to allow the container to be wider in desktop
+@include breakAt(desktop-xxl){
+    .container:not([class*=col]) {
+        max-width: (map_get($deviceSizes, desktop-xxl) - 60px);
+    }
+}
+
+// Allows the Columns in the Row to be equal height
+.row.row--equal-height-cols > div[class*=col] > * {
+    height: 100%;
+
+    // Empty div elements created by AEM
+    div:not([class]) {
+        height: 100%;
+    }
+
+    .card-content__body-container {
+        div:not([class]) {
+            height: auto;
+            display: none;
+        }
+
+        div:nth-of-type(1) {
+            display: block;
+            font-size: 0.875rem;
+            color: $darkgray;
+        }
+    }
+
+    // SPECIAL CASES
+    .promo, .promo__root, .promo__content-container {
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .document-download-template__card, .document-download, .document-download__body {
+        height: 100%;
+    }
+
+    .card-content, .meta-card__taxonomy {
+        height: 100%;
+    }
+
+    .experiencefragment, .xf-content-height, .aem-Grid, .root, .nonresponsivegrid, .responsivegrid {
+        height: 100%;
+    }
+
+    .container {
+        height: 100%;
+    }
+}
+
+// Experience Fragment Container negation
+.at-element-marker > div > .container {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row.row--equal-height-cols > div[class*=col].document-download {
+    height: auto;
+}
+
+// AEM Columns component will collapse and be unauthorable without width: 100%
+.row--aem-editor {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.file__icon{
+    margin-left: $spacing--sm;
+    @include font-size(md);
+    display: inline-block;
+}

@@ -1,0 +1,9 @@
+{
+	"title" : "Transition Lengths",
+	"description" : "Transition lengths throughout the pattern library.",
+	"defineVars" : {
+		"short" : "0.15s",
+		"normal" : "0.3s",
+		"long" : "0.45s"
+	}
+}

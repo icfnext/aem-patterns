@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>aem-patterns-example-frontend</comment>
+<entry key="createdBy">gsnyder</entry>
+<entry key="name">aem-patterns-example-frontend</entry>
+<entry key="created">2019-09-15T14:02:40.600-0500</entry>
+<entry key="groupId">com.icfnext.aem.patterns</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.icfnext.aem.patterns</entry>
+<entry key="description">aem-patterns-example-frontend</entry>
+<entry key="artifactId">aem-patterns-example-frontend</entry>
+<entry key="path">/etc/packages/com.icfnext.aem.patterns/aem-patterns-example-frontend.zip</entry>
+</properties>

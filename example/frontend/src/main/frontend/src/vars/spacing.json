@@ -1,0 +1,13 @@
+{
+	"title" : "Spacing",
+	"description" : "Spacing sizes to determine most padding & margin values.",
+	"defineVars" : {
+		"xs"  : "0.25",
+		"sm"  : "0.5",
+		"base": "1",
+		"md"  : "1.5",
+		"lg"  : "2",
+		"xl"  : "4",
+		"xxl" : "8"
+	}
+}

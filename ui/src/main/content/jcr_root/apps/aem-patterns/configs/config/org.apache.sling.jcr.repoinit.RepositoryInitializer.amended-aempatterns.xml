@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          scripts="[create service user aem-patterns-template-reader&#xD;&#xA;set ACL on /apps&#xD;&#xA;&#009;allow jcr&#58;read for aem-patterns-template-reader&#xD;&#xA;end]" />

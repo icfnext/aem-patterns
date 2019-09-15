@@ -1,0 +1,22 @@
+{
+  "title": "Z-Indexes",
+  "description": "The z index values for various elements",
+  "defineVars": {
+    "defaultNegativeLayer": -1,
+    "promoBackgroundImage": 1,
+    "promoBackgroundOverlay": 2,
+    "promoContentContainer": 3,
+    "primaryNavigation": 10,
+    "iconBadges":40,
+    "calendarViewPopover": 50,
+    "scrollToTop": 75,
+    "floatingMenu": 100,
+    "floatingMenuOverlay": 101,
+    "utilityNavigation": 1101,
+    "utilityLinksPointer":1102,
+    "utilityLinks":1103,
+    "utilityNavigationSignIn": 1110,
+    "loadingSpinner": 2000,
+    "organizationsAutoDropDown":1110
+  }
+}

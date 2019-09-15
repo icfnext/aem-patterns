@@ -1,0 +1,1 @@
+Static headings to demonstrate the different font families in the pattern library.

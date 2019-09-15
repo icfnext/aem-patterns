@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jcr:root activeTab="0" allowBlank="{Boolean}false" disabled="{Boolean}false" fileName="dialog.xml" hideLabel="{Boolean}false" xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="cq:Dialog" title="Carousel" xtype="dialog">
+  <items jcr:primaryType="cq:WidgetCollection">
+    <tabs jcr:primaryType="cq:TabPanel">
+      <items jcr:primaryType="cq:WidgetCollection">
+        <Carousel jcr:primaryType="cq:Widget" title="Carousel">
+          <items jcr:primaryType="cq:WidgetCollection"/>
+        </Carousel>
+      </items>
+    </tabs>
+  </items>
+</jcr:root>

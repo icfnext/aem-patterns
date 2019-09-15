@@ -1,0 +1,12 @@
+{
+	"title" : "Fonts",
+	"handle" : "fonts",
+	"default": "regular",
+	"variants": [
+		{
+			"name": "regular",
+			"context" : {
+			}
+		}
+	]
+}

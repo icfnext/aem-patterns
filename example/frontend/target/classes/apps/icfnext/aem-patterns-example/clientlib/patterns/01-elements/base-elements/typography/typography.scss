@@ -1,0 +1,76 @@
+h1, h2, h3, h4, h5, h6 {
+	@include font-family('black');
+}
+
+i, em {
+	@include font-family('italic');
+}
+
+b, strong {
+	@include font-family('bold');
+}
+
+blockquote {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0;
+	margin-top: $spacing--lg;
+	margin-bottom: $spacing--lg;
+
+	padding-bottom: $spacing--lg;
+	padding-top: $spacing--lg;
+	//@include breakAt(desktop) {
+	//	padding-bottom: $spacing--lg;
+	//	padding-top: $spacing--lg;
+	//}
+
+	padding-left: $spacing--lg;
+	padding-right: $spacing--lg;
+
+	@include font-size(lg);
+	@include breakAt(tablet) {
+		@include font-size(xl);
+	}
+
+	cite {
+		padding-top: $spacing--base;
+		text-align: right;
+		@include font-family(light);
+		@include font-size(md);
+		@include breakAt(tablet) {
+			@include font-size(lg);
+		}
+	}
+}
+
+// Adds a white fade from the bottom of this element
+.element--faded {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: -4rem;
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		min-height: 200px;
+		pointer-events: none;
+		background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 32%, rgba(255,255,255,0.9) 64%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 32%,rgba(255,255,255,0.9) 64%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 32%,rgba(255,255,255,0.9) 64%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	}
+}
+
+// Heading Icon Color
+.heading-icon--{
+	//additional classes can be added based on requirement
+	&orange {
+		color: $orange;
+	}
+	
+}

@@ -1,0 +1,6 @@
+// Hover-Focus-Visited Mixin
+@mixin is-active {
+	&:hover, &:focus, &:active, &.is-active {
+		@content;
+	}
+}

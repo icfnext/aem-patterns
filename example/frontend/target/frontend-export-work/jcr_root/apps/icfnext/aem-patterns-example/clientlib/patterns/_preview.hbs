@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="{{ path '/images/favicon.ico' }}" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ path '/css/example-overrides.css' }}">
+    <link rel="stylesheet" href="{{ path '/css/example-index.css' }}">
+    <title>{{_target.title}} | Preview</title>
+</head>
+
+<body>
+
+    {{#if _target.context.styleguideCenterComponent }}
+		{{stringBuilder "overrideStyles" "styleguide-center-component "}}
+    {{/if}}
+
+	{{#if _target.context.styleguideBackgroundColor }}
+		{{stringBuilder "overrideStyles" "bg-color-"}}
+		{{stringBuilder "overrideStyles" _target.context.styleguideBackgroundColor}}
+		{{stringBuilder "overrideStyles" " "}}
+	{{/if}}
+
+	<div class="{{overrideStyles}}">
+		<div>{{{ yield }}}</div>
+	</div>
+
+    <script src="{{ path '/js/main.bundled.js' }}"></script>
+</body>
+
+</html>

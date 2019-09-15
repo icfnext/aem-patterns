@@ -1,0 +1,161 @@
+// Color variables
+$navy           : map_get($colors, navy);
+$blue           : map_get($colors, blue);
+$lightblue      : map_get($colors, lightblue);
+$teal           : map_get($colors, teal);
+$darkgreen      : map_get($colors, darkgreen);
+$green          : map_get($colors, green);
+$lightgreen     : map_get($colors, lightgreen);
+$orange         : map_get($colors, orange);
+$granite        : map_get($colors, granite);
+$black          : map_get($colors, black);
+$white          : map_get($colors, white);
+$darkestgray    : map_get($colors, darkestgray);
+$darkgray       : map_get($colors, darkgray);
+$gray           : map_get($colors, gray);
+
+// Mixin to create vertically split two-color backgrounds
+@mixin color-gradient-vertical-half($left, $right){
+	background: $left;
+	background: -moz-linear-gradient(left, $left 0%, $left 50%, $right 50%, $right 50%, $right 50%, $right 100%);
+	background: -webkit-linear-gradient(left, $left 0%,$left 50%,$right 50%,$right 50%,$right 50%,$right 100%);
+	background: linear-gradient(to right, $left 0%,$left 50%,$right 50%,$right 50%,$right 50%,$right 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left', endColorstr='$right',GradientType=1 );
+}
+
+// Mixin to convert a hex and decimal to transparent background-color
+@mixin background-color-transparent($color, $opacity) {
+	background: $color;
+	background: rgba($color, $opacity);
+}
+
+// TODO Relocate this and add the other colors and reevaluate font colors
+.bg-color- {
+	&navy {
+		background-color: $navy;
+	}
+	&blue {
+		background-color: $blue;
+	}
+	&lightblue {
+		background-color: $lightblue;
+	}
+	&teal {
+		background-color: $teal;
+	}
+	&green {
+		background-color: $green;
+	}
+	&orange {
+		background-color: $orange;
+	}
+	&granite {
+		background-color: $granite;
+	}
+	&black {
+		background-color: $black;
+	}
+	&darkestgray {
+		background-color: $darkestgray;
+	}
+	&darkgray {
+		background-color: $darkgray;
+	}
+	&gray {
+		background-color: $gray;
+	}
+	&white {
+		background-color: $white;
+	}
+
+	// Font and Link Color pairings
+	&navy, &blue, &lightblue, &teal, &green, &orange, &granite, &black, &darkestgray, &darkgray {
+		color: $white;
+
+		a:not(.button), .button-list__root a.button-quaternary {
+			color: $gray;
+			text-decoration: underline;
+
+			&:hover {
+				color: $gray;
+				text-decoration: none;
+			}
+		}
+	}
+	&gray, &white {
+		// Default colors should already be compatible with Gray and White
+	}
+}
+
+// TODO The following for blockquote can likely be refactored better
+.bq-bg-color- {
+	&navy {
+		blockquote {
+			background-color: $navy;
+			color: $white;
+		}
+	}
+	&blue {
+		blockquote {
+			background-color: $blue;
+			color: $white;
+		}
+	}
+	&lightblue {
+		blockquote {
+			background-color: $lightblue;
+			color: $white;
+		}
+	}
+	&teal {
+		blockquote {
+			background-color: $teal;
+			color: $white;
+		}
+	}
+	&green {
+		blockquote {
+			background-color: $green;
+			color: $white;
+		}
+	}
+	&orange {
+		blockquote {
+			background-color: $orange;
+			color: $white;
+		}
+	}
+	&granite {
+		blockquote {
+			background-color: $granite;
+			color: $white;
+		}
+	}
+	&black {
+		blockquote {
+			background-color: $black;
+			color: $white;
+		}
+	}
+	&white {
+		blockquote {
+			background-color: $white;
+		}
+	}
+	&darkestgray {
+		blockquote {
+			background-color: $darkestgray;
+		}
+	}
+	&darkgray {
+		blockquote {
+			background-color: $darkgray;
+			color: $white;
+		}
+	}
+	&gray {
+		blockquote {
+			background-color: $gray;
+		}
+	}
+}

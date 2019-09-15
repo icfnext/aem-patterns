@@ -1,0 +1,29 @@
+{
+	"title" : "Typography",
+	"handle" : "typography",
+	"default": "paragraphs",
+	"variants": [
+		{
+			"name": "paragraphs",
+			"context" : {
+			}
+		},
+		{
+			"name": "headings",
+			"context" : {
+			}
+		},
+		{
+			"name": "blockquotes",
+			"context" : {
+				"styleguideCenterComponent": false
+			}
+		},{
+			"name": "headings-with-icons",
+			"context" : {
+				"iconClass":"fab fa-facebook-square",
+				"iconColor":"orange"
+			}
+		}
+	]
+}

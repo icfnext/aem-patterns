@@ -1,0 +1,10 @@
+{
+	"title" : "Font Weights",
+	"description" : "Font sizes throughout the pattern library.",
+	"defineVars" : {
+		"light" : "300",
+		"regular" : "400",
+		"bold" : "700",
+		"black" : "900"
+	}
+}

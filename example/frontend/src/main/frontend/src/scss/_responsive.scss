@@ -1,0 +1,23 @@
+// Responsive Mixins
+@mixin breakAt($size){
+	@media (min-width: map_get($deviceSizes, $size)){
+		@content;
+	}
+}
+
+@mixin upTo($size) {
+	@media (max-width: map_get($deviceSizes, $size) - 1px) {
+		@content;
+	}
+}
+
+// GLOBAL MAX-WIDTH CLASSES
+.max-width--400 {
+	max-width: 400px;
+}
+.max-width--800 {
+	max-width: 800px;
+}
+.max-width--1200 {
+	max-width: 1200px;
+}

@@ -1,0 +1,29 @@
+// Font Size Mixin
+@mixin font-size($size) {
+	font-size: #{map_get($fontSizes, $size)}rem;
+}
+
+@each $sizeName, $sizeValue in $fontSizes {
+    .font-size--#{$sizeName} {
+        font-size: #{$sizeValue}rem;
+    }
+}
+
+// SPECIAL RESPONSIVE FONT SIZES FOR LARGE FONTS
+.font-size {
+	&--xxl, &--xxxl {
+		@include upTo(tablet){
+			@include font-size(xl);
+		}
+	}
+	&--xxxxl {
+		@include upTo(tablet){
+			@include font-size(xxl);
+		}
+	}
+	&--xxxxxl {
+		@include upTo(tablet){
+			@include font-size(xxxl);
+		}
+	}
+}

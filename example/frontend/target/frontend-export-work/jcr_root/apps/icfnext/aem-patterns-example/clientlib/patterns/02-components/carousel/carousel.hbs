@@ -1,0 +1,31 @@
+<div id="{{id}}" class="carousel slide" data-ride="carousel">
+  {{#if indicators}}
+    <ol class="carousel-indicators">
+      {{#each slides}}
+        <li data-target="#{{id}}" data-slide-to="{{@index}}" {{#eq @index 0}}class="active"{{/eq}}></li>
+      {{/each}}
+    </ol>
+  {{/if}}
+  <div class="carousel-inner">
+    {{#each slides}}
+      <div class="carousel-item{{#eq @index 0}} active{{/eq}}">
+        <img src="{{imgSrc}}" class="d-block w-100" alt="{{imgAlt}}">
+        <div class="carousel-caption d-none d-md-block">
+          {{> @heading tag='h3' text=headingText}}
+          {{> @p text=descriptionText }}
+          {{> @button href=ctaHref text=ctaText style=ctaStyle }}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  {{#if controls}}
+    <a class="carousel-control-prev" href="#{{id}}" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#{{id}}" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  {{/if}}
+</div>

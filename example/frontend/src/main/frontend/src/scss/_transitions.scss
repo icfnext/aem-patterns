@@ -1,0 +1,5 @@
+// Transition Mixin
+@mixin transition($length, $properties...){
+    transition: all map-get($map: $transitionLengths, $key: $length) ease-out;
+    transition-property: $properties;
+}

@@ -1,0 +1,18 @@
+{
+    "title" : "Font Sizes",
+    "description" : "Font sizes throughout the pattern library.",
+    "defineVars" : {
+        "base-font-size" : "16",
+        "xxs" : "0.625",
+        "xs" : "0.75",
+        "sm" : "0.875",
+        "base" : "1",
+        "md" : "1.25",
+        "lg" : "1.5",
+        "xl" : "2",
+        "xxl" : "2.5",
+        "xxxl" : "3",
+        "xxxxl" : "3.5",
+        "xxxxxl" : "4"
+    }
+}

@@ -1,0 +1,81 @@
+$font-path:"../fonts/lato/";
+
+@font-face {
+	font-family: 'Lato-Black';
+	src: url('#{$font-path}Lato-Black.eot');
+	src: url('#{$font-path}Lato-Black.eot?#iefix') format('embedded-opentype'),
+	url('#{$font-path}Lato-Black.woff') format('woff'),
+	url('#{$font-path}Lato-Black.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-BlackItalic';
+	src: url('#{$font-path}Lato-BlackItalic.eot');
+	src: url('#{$font-path}Lato-BlackItalic.eot?#iefix') format('embedded-opentype'),
+	url('#{$font-path}Lato-BlackItalic.woff') format('woff'),
+	url('#{$font-path}Lato-BlackItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url('#{$font-path}Lato-Bold.eot');
+	src: url('#{$font-path}Lato-Bold.eot?#iefix') format('embedded-opentype'),
+	url('#{$font-path}Lato-Bold.woff') format('woff'),
+	url('#{$font-path}Lato-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-BoldItalic';
+	src: url('#{$font-path}Lato-BoldItalic.eot');
+	src: url('#{$font-path}Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+	url('#{$font-path}Lato-BoldItalic.woff') format('woff'),
+	url('#{$font-path}Lato-BoldItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Italic';
+	src: url('#{$font-path}Lato-Italic.eot');
+	src: url('#{$font-path}Lato-Italic.eot?#iefix') format('embedded-opentype'),
+	url('#{$font-path}Lato-Italic.woff') format('woff'),
+	url('#{$font-path}Lato-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Light';
+	src: url('#{$font-path}Lato-Light.eot');
+	src: url('#{$font-path}Lato-Light.eot?#iefix') format('embedded-opentype'),
+	url('#{$font-path}Lato-Light.woff') format('woff'),
+	url('#{$font-path}Lato-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-LightItalic';
+	src: url('#{$font-path}Lato-LightItalic.eot');
+	src: url('#{$font-path}Lato-LightItalic.eot?#iefix') format('embedded-opentype'),
+	url('#{$font-path}Lato-LightItalic.woff') format('woff'),
+	url('#{$font-path}Lato-LightItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('#{$font-path}Lato-Regular.eot');
+	src: url('#{$font-path}Lato-Regular.eot?#iefix') format('embedded-opentype'),
+	url('#{$font-path}Lato-Regular.woff') format('woff'),
+	url('#{$font-path}Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

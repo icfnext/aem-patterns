@@ -1,0 +1,165 @@
+// Spacing Mixins & Variables
+$spacing--xs: #{map_get($spacing, xs)}rem;
+$spacing--sm: #{map_get($spacing, sm)}rem;
+$spacing--base: #{map_get($spacing, base)}rem;
+$spacing--md: #{map_get($spacing, md)}rem;
+$spacing--lg: #{map_get($spacing, lg)}rem;
+$spacing--xl: #{map_get($spacing, xl)}rem;
+$spacing--xxl: #{map_get($spacing, xxl)}rem;
+
+$spacing-models: (
+	inset: (
+		xs: $spacing--xs $spacing--xs,
+		sm: $spacing--sm $spacing--sm,
+		base: $spacing--base $spacing--base,
+		md: $spacing--md $spacing--md,
+		lg: $spacing--lg $spacing--lg,
+		xl: $spacing--xl $spacing--xl,
+		xxl: $spacing--xxl $spacing--xxl
+	),
+	inset-squish: (
+		sm: $spacing--xs $spacing--sm,
+		base: $spacing--sm $spacing--base,
+		md: $spacing--base $spacing--md, // md's squish is similar to lg
+		lg: $spacing--base $spacing--lg,
+		xl: $spacing--lg $spacing--xl,
+		xxl: $spacing--xl $spacing--xxl
+	),
+	inset-stretch: (
+		sm: $spacing--base $spacing--sm,
+		base: $spacing--lg $spacing--base,
+		md: $spacing--xl $spacing--md, // md's stretch is similar to lg
+		lg: $spacing--xl $spacing--lg,
+		xl: $spacing--xxl $spacing--xl
+	),
+	stack: (
+		xs: 0 0 $spacing--xs 0,
+		sm: 0 0 $spacing--sm 0,
+		base: 0 0 $spacing--base 0,
+		md: 0 0 $spacing--md 0,
+		lg: 0 0 $spacing--lg 0,
+		xl: 0 0 $spacing--xl 0,
+		xxl: 0 0 $spacing--xxl 0
+	),
+	vertical: (
+		xs: $spacing--xs 0,
+		sm: $spacing--sm 0,
+		base: $spacing--base 0,
+		md: $spacing--md 0,
+		lg: $spacing--lg 0,
+		xl: $spacing--xl 0,
+		xxl: $spacing--xxl 0
+	),
+	inline: (
+		xs: 0 $spacing--xs 0 0,
+		sm: 0 $spacing--sm 0 0,
+		base: 0 $spacing--base 0 0,
+		md: 0 $spacing--md 0 0,
+		lg: 0 $spacing--lg 0 0,
+		xl: 0 $spacing--xl 0 0,
+		xxl: 0 $spacing--xxl 0 0
+	)
+);
+
+// Retrieves a spacing model from a series of spacing models
+// @param $spacing-model - the spacing model within the models map, ie: `inset`,`inline`
+// @param $unit - the spacing unit within the aforementioned model, ie: `sm`, `xl`
+@function get-spacing($spacing-model, $unit) {
+	@return map-get(map-get($spacing-models, $spacing-model), $unit);
+}
+
+// GLOBAL PADDING CLASSES
+.padding--inset- {
+	&xs {
+		padding: get-spacing(inset, xs);
+	}
+	&sm {
+		padding: get-spacing(inset, sm);
+	}
+	&base {
+		padding: get-spacing(inset, base);
+	}
+	&md {
+		padding: get-spacing(inset, md);
+	}
+	&lg {
+		padding: get-spacing(inset, lg);
+	}
+	&xl {
+		padding: get-spacing(inset, xl);
+	}
+}
+// padding bottom
+.padding--stack- {
+	&xs {
+		padding-bottom: $spacing--xs;
+	}
+	&sm {
+		padding-bottom: $spacing--sm;
+	}
+	&base {
+		padding-bottom: $spacing--base;
+	}
+	&md {
+		padding-bottom: $spacing--md;
+	}
+	&lg {
+		padding-bottom: $spacing--lg;
+	}
+	&xl {
+		padding-bottom: $spacing--xl;
+	}
+}
+// Last Child with Stack Padding is disabled in mobile; parent should be providing the stack padding in mobile
+div[class*=padding--stack].padding--last-child {
+	@include upTo(desktop){
+		padding-bottom: 0;
+	}
+}
+// padding top & bottom
+.padding--vertical- {
+	&xs {
+		padding-top: $spacing--xs;
+		padding-bottom: $spacing--xs;
+	}
+	&sm {
+		padding-top: $spacing--sm;
+		padding-bottom: $spacing--sm;
+	}
+	&base {
+		padding-top: $spacing--base;
+		padding-bottom: $spacing--base;
+	}
+	&md {
+		padding-top: $spacing--md;
+		padding-bottom: $spacing--md;
+	}
+	&lg {
+		padding-top: $spacing--lg;
+		padding-bottom: $spacing--lg;
+	}
+	&xl {
+		padding-top: $spacing--xl;
+		padding-bottom: $spacing--xl;
+	}
+}
+// center elements horizontally
+.alignment--horizontal- {
+	&left {
+		width: fit-content;
+		margin-left: inherit;
+		margin-right: auto;
+	}
+	&center {
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&right {
+		width: fit-content;
+		margin-left: auto;
+		margin-right: inherit;
+	}
+}
+
+

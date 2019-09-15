@@ -1,0 +1,9 @@
+{
+	"title" : "Line Heights",
+	"description" : "Line heights throughout the pattern library.",
+	"defineVars" : {
+		"short" : "1.3",
+		"normal" : "1.5",
+		"tall" : "1.7"
+	}
+}

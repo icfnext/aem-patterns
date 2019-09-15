@@ -1,0 +1,50 @@
+{
+    "title" : "Heading",
+    "handle" : "heading",
+    "default": "h1",
+    "collated": true,
+    "variants": [
+      {
+        "name":"h1",
+        "context":{
+          "tag":"h1",
+          "text":"heading one"
+        }
+      },
+      {
+        "name":"h2",
+        "context":{
+          "tag":"h2",
+          "text":"heading two"
+        }
+      },
+      {
+        "name":"h3",
+        "context":{
+          "tag":"h3",
+          "text":"heading three"
+        }
+      },
+      {
+        "name":"h4",
+        "context":{
+          "tag":"h4",
+          "text":"heading four"
+        }
+      },
+      {
+        "name":"h5",
+        "context":{
+          "tag":"h5",
+          "text":"heading five"
+        }
+      },
+      {
+        "name":"h6",
+        "context":{
+          "tag":"h6",
+          "text":"heading six"
+        }
+      }
+    ]
+}

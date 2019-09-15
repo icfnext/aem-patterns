@@ -1,0 +1,22 @@
+{
+	"ns": {
+		"label": "Not Started",
+		"description": "Basic markup has been created but nothing else",
+		"color": "#70798C"
+	},
+	"wip": {
+		"label": "Work In Progress",
+		"description": "This component is being worked on",
+		"color": "#FFBF46"
+	},
+	"qa": {
+		"label": "Ready for QA",
+		"description": "This component is ready to be QA'd",
+		"color": "#3FA7D6"
+	},
+	"done": {
+		"label": "Ready for Handoff",
+		"description": "This component is ready to handed off",
+		"color": "#5BBA6F"
+	}
+}

@@ -1,0 +1,31 @@
+.font--light {
+	@include font-family('light');
+}
+
+.font--light-italic {
+	@include font-family('light-italic');
+}
+
+.font--regular {
+	@include font-family('regular');
+}
+
+.font--italic {
+	@include font-family('italic');
+}
+
+.font--bold {
+	@include font-family('bold');
+}
+
+.font--bold-italic {
+	@include font-family('bold-italic');
+}
+
+.font--black {
+	@include font-family('black');
+}
+
+.font--black-italic {
+	@include font-family('black-italic');
+}

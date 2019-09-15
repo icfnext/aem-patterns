@@ -1,0 +1,5 @@
+com/icfnext/aem/patterns/example/constants/TemplatePaths.class
+com/icfnext/aem/patterns/example/components/content/Carousel.class
+com/icfnext/aem/patterns/example/components/page/ExamplePage.class
+com/icfnext/aem/patterns/example/components/content/CarouselSlide.class
+com/icfnext/aem/patterns/example/constants/ResourceTypes.class

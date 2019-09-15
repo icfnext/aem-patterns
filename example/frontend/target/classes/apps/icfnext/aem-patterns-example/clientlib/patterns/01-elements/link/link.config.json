@@ -1,0 +1,23 @@
+{
+    "title" : "Link",
+    "handle" : "link",
+    "default": "link",
+    "collated": true,
+    "variants": [
+      {
+        "name":"link",
+        "context":{
+          "href":"https://www.google.com",
+          "text":"link"
+        }
+      },
+      {
+        "name":"new window",
+        "context":{
+          "href":"https://www.google.com",
+          "target":"_blank",
+          "text":"new window"
+        }
+      }
+    ]
+}
