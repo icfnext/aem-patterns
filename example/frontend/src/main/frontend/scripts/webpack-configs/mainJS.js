@@ -84,7 +84,7 @@ export default {
             loader: "file-loader",
             options: {
               name: "fonts/[name].[ext]",
-              publicPath: devMode ? "/" : "./"
+              publicPath: devMode ? "/" : "../"
             }
           }
         ]
@@ -97,7 +97,7 @@ export default {
             loader: "file-loader",
             options: {
               name: "images/[name].[ext]",
-              publicPath: devMode ? "/" : "./"
+              publicPath: devMode ? "/" : "../"
             }
           }
         ]

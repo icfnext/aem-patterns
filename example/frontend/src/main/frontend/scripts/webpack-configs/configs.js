@@ -8,7 +8,7 @@ let entriesObj = {};
 
 entries.forEach( ( entryPath ) => {
     let pathArray = entryPath.split('/');
-    let srcPosition = pathArray.indexOf('frontend');
+    let srcPosition = pathArray.lastIndexOf(process.env.npm_package_config_rootFolderName);
     let relPath = pathArray.splice( srcPosition + 2 ).join('/');
     let babelPos = relPath.indexOf('.babel');
     relPath = relPath.substr(0, babelPos);

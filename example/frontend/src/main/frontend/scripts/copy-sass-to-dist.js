@@ -21,6 +21,7 @@ function cpFiles( opts ) {
 
     let folderName     = opts.folderName;
     let filePath        = opts.filePath;
+    process.platform.includes("win") ? filePath = filePath.replace(/\\/g,"/") : '';
     let pathArray      = filePath.split('/');
     let folderLocation = pathArray.indexOf(folderName);
     let ignoreFile     = false;

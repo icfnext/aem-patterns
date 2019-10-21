@@ -8,6 +8,8 @@ let pathsCamelCase = [];
 
 files.forEach(filePath => {
 
+    process.platform.includes("win") ? filePath = filePath.replace(/\\/g,"/") : '';
+
 	filePath = filePath
 		.split("/")
 		.splice(2, filePath.split("/").length - 2)
