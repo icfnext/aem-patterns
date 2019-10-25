@@ -90,15 +90,15 @@ const stringBuilder = function(name, value, context){
 };
 instanceComponents.handlebars.registerHelper('stringBuilder', stringBuilder);
 
+// 'pathBuilder' generates a link path to jump from one Fractal page to another, conditionally based on environment
+// Example: <a href="{{pathBuilder "components/preview/sample-page"}}">
 const pathBuilder = function (path, context) {
-
     if( isStyleguideBuild && path !== '#' ){
-        return process.env.npm_package_config_styleguideRootPath + path;
+        return process.env.npm_package_config_styleguideRootPath + path + ".html";
     } else if (path !== '#') {
         return "/" + path;
     } else {
         return path;
     }
-
 };
 instanceComponents.handlebars.registerHelper("pathBuilder", pathBuilder);
