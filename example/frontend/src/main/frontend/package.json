@@ -65,7 +65,7 @@
     "watch:js": "webpack --config scripts/webpack.config.babel.js -w",
     "watch:sass": "node-sass-chokidar ./src/scss/style-guide-theme-overrides.scss -o ./public/css/ --watch",
     "watch:styleguide": "fractal start --sync",
-    "copy:images": "shx mkdir -p ./public && shx cp -r ./src/images ./public/images",
+    "copy:images": "shx mkdir -p ./public ./src/images && shx cp -r ./src/images ./public/images",
     "copy:sass": "node ./scripts/copy-sass-to-dist.js",
     "build-fractal": "cross-env NODE_ENV=production npm-run-all build:*",
     "build": "cross-env NODE_ENV=production npm-run-all build:js",
