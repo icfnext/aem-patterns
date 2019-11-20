@@ -11,7 +11,7 @@
 Starts the Fractal styleguide instance on *localhost:3000* with *watch* enabled for convenient development.
 
 **Build Fractal styleguide:** `yarn build-fractal`  
-Builds the static deployable instance of the Fractal styleguide under *fractal-app/docs*.
+Builds the static deployable instance of the Fractal styleguide under *frontend/docs*.
 
 **Build JS+CSS [+ export fonts & images] only:** `yarn build`  
-Builds the JS+CSS into an AEM clientlib.
+Builds the JS+CSS under *frontend/dist*.

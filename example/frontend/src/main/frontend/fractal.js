@@ -56,7 +56,7 @@ const theme = mandelbrot({
     "panels": ["notes", "html", "view", "context", "resources", "info"],
     "styles": [
         "default",
-        (isStyleguideBuild ? "" : "/") + "css/style-guide-theme-overrides.css"
+        (isStyleguideBuild ? "" : "/") + "css/styleguide-overrides.css"
     ]
 });
 
