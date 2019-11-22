@@ -1,17 +1,8 @@
 import { resolve } from "path";
-import globby from "globby";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
 const devMode = process.env.NODE_ENV !== "production";
 
-let mode = "=============== IS " + (devMode ? 'DEV MODE' : 'PROD MODE') + " ===============" 
+let mode = "=============== IS " + (devMode ? 'DEV MODE' : 'PROD MODE') + " ===============";
 console.log(mode);
-
-const extractSass = new MiniCssExtractPlugin({
-  // Options similar to the same options in webpackOptions.output
-  // both options are optional
-  filename: "../public/css/example-index.css",
-  chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
-});
 
 export default {
   mode: "development",
@@ -28,6 +19,7 @@ export default {
     path: resolve(__dirname, "../../public"),
     filename: "[name].js"
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -53,7 +45,10 @@ export default {
                 loader: 'extract-loader'
             },
             {
-                loader: 'css-loader'
+                loader: 'css-loader',
+                options: {
+                    minimize: !devMode,
+                }
             },
             {
                 loader: 'postcss-loader'

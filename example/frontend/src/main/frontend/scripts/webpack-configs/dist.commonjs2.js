@@ -1,14 +1,5 @@
 import { resolve } from "path";
-import globby from "globby";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
 const devMode = process.env.NODE_ENV !== "production";
-
-const extractSass = new MiniCssExtractPlugin({
-    // Options similar to the same options in webpackOptions.output
-    // both options are optional
-    filename: "../dist/example-index.css",
-    chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
-});
 
 export default {
     mode: "development",
@@ -26,6 +17,7 @@ export default {
         path: resolve(__dirname, "../../dist"),
         filename: "patterns.js"
     },
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -51,7 +43,10 @@ export default {
                         loader: 'extract-loader'
                     },
                     {
-                        loader: 'css-loader'
+                        loader: 'css-loader',
+                        options: {
+                            minimize: !devMode,
+                        }
                     },
                     {
                         loader: 'postcss-loader'
@@ -101,6 +96,5 @@ export default {
                 ]
             }
         ]
-    },
-    plugins: [extractSass]
+    }
 };

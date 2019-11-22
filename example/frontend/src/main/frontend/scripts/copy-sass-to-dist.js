@@ -6,7 +6,7 @@ const patternFiles = glob1.readdirSync("./src/patterns/**/*.scss", {});
 const sassFiles    = glob2.readdirSync("./src/scss/**/*.scss", {});
 
 let ignore = [
-    'style-guide-theme-overrides.scss'
+    'styleguide-overrides.scss', 'pattern-overrides.scss'
 ];
 
 patternFiles.forEach(( filePath ) => {
