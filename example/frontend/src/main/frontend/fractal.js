@@ -36,7 +36,7 @@ fractal.components.set("default.status", "ns");
 fractal.components.set("default.context", {
     imgRootPath: isStyleguideBuild ? process.env.npm_package_config_styleguideRootPath : "/",
     cssRootPath: isStyleguideBuild ? process.env.npm_package_config_styleguideRootPath : "/",
-    styleguideCenterComponent: true
+    styleguideCenterComponent: false
 });
 
 fractal.docs.set("default.context", {

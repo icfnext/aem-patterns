@@ -6,21 +6,23 @@
 		{
 			"name": "paragraphs",
 			"context" : {
+        "styleguideCenterComponent": true
 			}
 		},
 		{
 			"name": "headings",
 			"context" : {
+        "styleguideCenterComponent": true
 			}
 		},
 		{
 			"name": "blockquotes",
 			"context" : {
-				"styleguideCenterComponent": false
 			}
 		},{
 			"name": "headings-with-icons",
 			"context" : {
+        "styleguideCenterComponent": true,
 				"iconClass":"fab fa-facebook-square",
 				"iconColor":"orange"
 			}
