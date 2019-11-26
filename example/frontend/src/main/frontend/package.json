@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "",
-  "author": "ICF Olson",
+  "author": "ICF Next",
   "license": "none",
   "private": true,
   "config": {
@@ -33,7 +33,6 @@
     "handlebars-helpers": "^0.10.0",
     "handlebars-layouts": "^3.1.4",
     "jquery": "^3.3.1",
-    "js-cookie": "^2.2.0",
     "mini-css-extract-plugin": "^0.4.0",
     "moment": "^2.24.0",
     "node-sass": "^4.8.3",
@@ -74,16 +73,13 @@
     "start": "npm run watch"
   },
   "dependencies": {
-    "@ungap/url-search-params": "^0.1.2",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.3.1",
     "html-validator-cli": "^4.0.0",
-    "inputmask": "^4.0.0",
     "npm": "^6.4.1",
     "postcss-cli": "^5.0.0",
     "serve": "^6.5.5",
     "slick-carousel": "^1.8.1",
-    "stickybits": "^3.3.7",
     "yarn": "^1.10.1"
   }
 }
