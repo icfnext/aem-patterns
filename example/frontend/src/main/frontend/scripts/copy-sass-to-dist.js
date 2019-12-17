@@ -6,7 +6,7 @@ const patternFiles = glob1.readdirSync("./src/patterns/**/*.scss", {});
 const sassFiles    = glob2.readdirSync("./src/scss/**/*.scss", {});
 
 let ignore = [
-    'style-guide-theme-overrides.scss'
+    'styleguide-overrides.scss', 'pattern-overrides.scss'
 ];
 
 patternFiles.forEach(( filePath ) => {
@@ -21,6 +21,7 @@ function cpFiles( opts ) {
 
     let folderName     = opts.folderName;
     let filePath        = opts.filePath;
+    process.platform.includes("win") ? filePath = filePath.replace(/\\/g,"/") : '';
     let pathArray      = filePath.split('/');
     let folderLocation = pathArray.indexOf(folderName);
     let ignoreFile     = false;

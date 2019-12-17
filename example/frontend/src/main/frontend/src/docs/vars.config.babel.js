@@ -7,7 +7,7 @@ import fontWeights from '../vars/font-weights.json'
 import lineHeights from '../vars/line-heights.json'
 import spacing from '../vars/spacing.json'
 import transitionLengths from '../vars/transition-lengths.json'
-import zIndexes from '../vars/zIndexes.json'
+import zIndexes from '../vars/z-indexes.json'
 
 const context = {
 	colors: colors,

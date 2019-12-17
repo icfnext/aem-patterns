@@ -1,20 +1,16 @@
 {
-    "title" : "Colors",
-    "description" : "Colors used throughout the library.",
-    "defineVars" : {
-        "navy": "#0d4d96",
-        "blue": "#00a7e0",
-        "lightblue": "#1ab5ea",
-        "teal": "#0083ad",
-        "darkgreen": "#227a57",
-        "green": "#32996c",
-        "lightgreen": "#9ed089",
-        "orange": "#e45438",
-        "granite": "#c2b9b8",
-        "black": "#444444",
-        "white": "#FFFFFF",
-        "darkestgray": "#666666",
-        "darkgray": "#999999",
-        "gray": "#ebf0f2"
-    }
+  "title" : "Colors",
+  "description" : "Colors used throughout the library.",
+  "defineVars" : {
+    "magenta": "#ed0677",
+    "orange": "#f58220",
+    "yellow": "#ffdd00",
+    "green": "#bfd730",
+    "blue": "#5bcbf5",
+    "darkblue": "#004185",
+    "black": "#000000",
+    "white": "#ffffff",
+    "lightgray": "#dfe5e8",
+    "gray": "#999999"
+  }
 }

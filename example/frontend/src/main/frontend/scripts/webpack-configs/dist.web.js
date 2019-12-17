@@ -1,5 +1,4 @@
 import { resolve } from "path";
-import globby from "globby";
 const devMode = process.env.NODE_ENV !== "production";
 
 export default {
@@ -17,6 +16,7 @@ export default {
         path: resolve(__dirname, "../../dist"),
         filename: "example.patterns.bundled.js"
     },
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -42,7 +42,10 @@ export default {
                         loader: 'extract-loader'
                     },
                     {
-                        loader: 'css-loader'
+                        loader: 'css-loader',
+                        options: {
+                            minimize: !devMode,
+                        }
                     },
                     {
                         loader: 'postcss-loader'

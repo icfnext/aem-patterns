@@ -63,6 +63,7 @@ yarn-error.log
 .idea/encodings.xml
 .idea/misc.xml
 .idea/modules.xml
+.idea/icf.iml
 .idea/vcs.xml
 .idea/workspace.xml
 out/
@@ -85,3 +86,6 @@ public/**/example.*
 
 # Babel generated config js files
 /src/docs/*.config.js
+
+# node folder
+node/

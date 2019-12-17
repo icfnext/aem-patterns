@@ -7,7 +7,7 @@ import {defineVars as fontWeights} from './font-weights.json'
 import {defineVars as lineHeights} from './line-heights.json'
 import {defineVars as spacing} from './spacing.json'
 import {defineVars as transitionLengths} from './transition-lengths.json'
-import {defineVars as zIndexes} from './zIndexes.json'
+import {defineVars as zIndexes} from './z-indexes.json'
 
 export {
 	colors,
