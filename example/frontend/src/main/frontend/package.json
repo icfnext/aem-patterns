@@ -78,7 +78,7 @@
     "html-validator-cli": "^4.0.0",
     "npm": "^6.4.1",
     "postcss-cli": "^5.0.0",
-    "serve": "^6.5.5",
+    "serve": "^10.1.2",
     "slick-carousel": "^1.8.1",
     "yarn": "^1.10.1"
   }
