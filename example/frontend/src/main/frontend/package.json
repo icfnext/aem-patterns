@@ -34,7 +34,7 @@
     "handlebars-layouts": "^3.1.4",
     "jquery": "^3.3.1",
     "mini-css-extract-plugin": "^0.4.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "node-sass": "^4.8.3",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
